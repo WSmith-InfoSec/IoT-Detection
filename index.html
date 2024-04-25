@@ -1,0 +1,303 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+  <script src="./index.js"></script>
+  
+  <style>
+      
+      table, th, td {
+           border: 1px solid;
+		font-size: 20px;
+	      background: white;
+	      padding: 0.5em;
+      }
+	  
+	  #boxes1{
+	text-align: left;
+	  padding-left: 4em;
+	  font-size: 20px;
+	  font-weight: bold;
+	  background: #e6eef5;
+	  border-radius: 25px;
+	  padding: 20px;
+	  }
+	  
+	  #box1 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  
+	  	  #box2 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  
+	  	  #box3 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  
+	  	  #box4 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box5 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box6 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box7 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box8 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+
+	  	  #box9 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box10 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box11 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box12 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+
+	  	  #box13 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box14 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box15 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box16 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box17 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+	  	  #box18 {
+			padding: 8px;
+			margin: 0.4em;
+	  }
+      
+      #leftbox {
+                float:left; 
+                width:33%;
+                height:300px;
+      }
+      #middlebox{
+                float:left; 
+                width:33%;
+                height:300px;
+        }
+        #rightbox{
+                float:right;
+                width:33%;
+                height:300px;
+        }
+        h1{
+                color:white;
+				background: #0f1b38;
+				padding: 15px;
+                text-align:center;
+				font-size: 42px;
+				background-image: url('h1bg.png');
+        }
+	h2{
+		font-size:32px;
+	}
+		
+	#boxes2{
+		background: white;
+		border-radius: 25px;
+	  	padding: 10px;
+		height: 200px;
+	}
+		body{
+			text-align: center;
+			background-image: url('water.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.button {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #FAC898;
+			  border: 2px solid black;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 24px;
+			  padding: 20px;
+			  width: 200px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			  font-weight: bold;
+			}
+
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -20px;
+			  transition: 0.5s;
+			}
+
+			.button:hover span {
+			  padding-right: 25px;
+			}
+
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			#populate {
+				margin: auto;
+				width:50%;
+			}
+			.edibleM{
+			
+			  background-color: #04AA6D;
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.misc {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #f44336;
+			}
+
+			.misc:hover {
+			  background-color: #f44336;
+			  color: white;
+			}
+
+			.poisonousM{
+			
+			  background-color: #04AA6D; 
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.poisonousM {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #f44336;
+			}
+
+			.poisonousM:hover {
+			  background-color: #f44336;
+			  color: white;
+			}
+
+	  #result {
+		float: right;
+		  text-align: right;
+	  }
+	  
+	  	
+     
+      
+  </style>
+</head>
+<body>
+  
+  <h1> IoT Device Detection</h1>
+  
+ 
+  
+   <div id = "boxes1">    
+		<input type="text" id="box1" value="0">IP Length<br/>
+  		<input type="text" id="box2" value="0">IP Header Length<br/>
+  		<input type="text" id="box3" value="0">TTL<br/>
+  		<input type="text" id="box4" value="0">Protocol<br/>
+  		<input type="text" id="box5" value="0" >Source Port<br/>
+  		<input type="text" id="box6" value="0">Destination Port<br/>
+  		<input type="text" id="box7" value="0">Sequence Number<br/>
+  		<input type="text" id="box8" value="0">Ack Number<br/>
+      <input type="text" id="box9" value="0">Window Size<br/>
+      <input type="text" id="box10" value="0">TCP Header Length<br/>
+      <input type="text" id="box11" value="0">TCP Length<br/>
+      <input type="text" id="box12" value="0">TCP Stream<br/>
+      <input type="text" id="box13" value="0">TCP Urgent Pointer<br/>
+      <input type="text" id="box14" value="0">IP Flags<br/>
+      <input type="text" id="box15" value="0">IP ID<br/>
+      <input type="text" id="box16" value="0">IP checksum<br/>
+      <input type="text" id="box17" value="0">TCP Flags<br/>
+      <input type="text" id="box18" value="0">TCP checksum<br/>
+   
+	<div id = "populate">
+<button class = "misc" onclick="populateMiscellaneous()"> Miscellaneous Example</button>
+<button class = "misc" onclick="populateCamera()"> Camera Example</button>
+<button class = "misc" onclick="populateAssistant()"> Assistant Example</button>
+<button class = "misc" onclick="populateOutlet()"> Outlet Example</button>
+<button class = "misc" onclick="populateMobile()"> Mobile Example</button>
+	</div>
+
+    </div> 
+      
+
+  <div>
+	  <button class="button" onclick="runExample()"><span> Device Type</span></button>
+   </div>
+  
+
+        <div id = "boxes2">
+              <h2>Inference</h2>
+              
+               <div id="predictions">
+               </div>	
+		
+	<div id = "result">
+	</div>
+        </div>
+  
+
+</body>
+</html>
