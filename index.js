@@ -8,16 +8,16 @@ function populateMiscellaneous()
 	let input6 = document.getElementById('box6');
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
-  let input9 = document.getElementById('box8');
-  let input10 = document.getElementById('box8');
-  let input11 = document.getElementById('box8');
-  let input12 = document.getElementById('box8');
-  let input13 = document.getElementById('box8');
-  let input14 = document.getElementById('box8');
-  let input15 = document.getElementById('box8');
-  let input16 = document.getElementById('box8');
-  let input17 = document.getElementById('box8');
-  let input18 = document.getElementById('box8');
+	  let input9 = document.getElementById('box9');
+	  let input10 = document.getElementById('box10');
+	  let input11 = document.getElementById('box11');
+	  let input12 = document.getElementById('box12');
+	  let input13 = document.getElementById('box13');
+	  let input14 = document.getElementById('box14');
+	  let input15 = document.getElementById('box15');
+	  let input16 = document.getElementById('box16');
+	  let input17 = document.getElementById('box17');
+	  let input18 = document.getElementById('box18');
   
 	
 	input1.value = "60";
@@ -51,16 +51,16 @@ function populateCamera()
 	let input6 = document.getElementById('box6');
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
-  let input9 = document.getElementById('box8');
-  let input10 = document.getElementById('box8');
-  let input11 = document.getElementById('box8');
-  let input12 = document.getElementById('box8');
-  let input13 = document.getElementById('box8');
-  let input14 = document.getElementById('box8');
-  let input15 = document.getElementById('box8');
-  let input16 = document.getElementById('box8');
-  let input17 = document.getElementById('box8');
-  let input18 = document.getElementById('box8');
+  let input9 = document.getElementById('box9');
+	  let input10 = document.getElementById('box10');
+	  let input11 = document.getElementById('box11');
+	  let input12 = document.getElementById('box12');
+	  let input13 = document.getElementById('box13');
+	  let input14 = document.getElementById('box14');
+	  let input15 = document.getElementById('box15');
+	  let input16 = document.getElementById('box16');
+	  let input17 = document.getElementById('box17');
+	  let input18 = document.getElementById('box18');
   
 	
 	input1.value = "142";
@@ -93,16 +93,16 @@ function populateAssistant()
 	let input6 = document.getElementById('box6');
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
-  let input9 = document.getElementById('box8');
-  let input10 = document.getElementById('box8');
-  let input11 = document.getElementById('box8');
-  let input12 = document.getElementById('box8');
-  let input13 = document.getElementById('box8');
-  let input14 = document.getElementById('box8');
-  let input15 = document.getElementById('box8');
-  let input16 = document.getElementById('box8');
-  let input17 = document.getElementById('box8');
-  let input18 = document.getElementById('box8');
+  let input9 = document.getElementById('box9');
+	  let input10 = document.getElementById('box10');
+	  let input11 = document.getElementById('box11');
+	  let input12 = document.getElementById('box12');
+	  let input13 = document.getElementById('box13');
+	  let input14 = document.getElementById('box14');
+	  let input15 = document.getElementById('box15');
+	  let input16 = document.getElementById('box16');
+	  let input17 = document.getElementById('box17');
+	  let input18 = document.getElementById('box18');
   
 	
 	input1.value = "52";
@@ -135,16 +135,16 @@ function populateOutlet()
 	let input6 = document.getElementById('box6');
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
-  let input9 = document.getElementById('box8');
-  let input10 = document.getElementById('box8');
-  let input11 = document.getElementById('box8');
-  let input12 = document.getElementById('box8');
-  let input13 = document.getElementById('box8');
-  let input14 = document.getElementById('box8');
-  let input15 = document.getElementById('box8');
-  let input16 = document.getElementById('box8');
-  let input17 = document.getElementById('box8');
-  let input18 = document.getElementById('box8');
+  let input9 = document.getElementById('box9');
+	  let input10 = document.getElementById('box10');
+	  let input11 = document.getElementById('box11');
+	  let input12 = document.getElementById('box12');
+	  let input13 = document.getElementById('box13');
+	  let input14 = document.getElementById('box14');
+	  let input15 = document.getElementById('box15');
+	  let input16 = document.getElementById('box16');
+	  let input17 = document.getElementById('box17');
+	  let input18 = document.getElementById('box18');
   
 	
 	input1.value = "40";
@@ -177,17 +177,16 @@ function populateMobile()
 	let input6 = document.getElementById('box6');
 	let input7 = document.getElementById('box7');
 	let input8 = document.getElementById('box8');
-  let input9 = document.getElementById('box8');
-  let input10 = document.getElementById('box8');
-  let input11 = document.getElementById('box8');
-  let input12 = document.getElementById('box8');
-  let input13 = document.getElementById('box8');
-  let input14 = document.getElementById('box8');
-  let input15 = document.getElementById('box8');
-  let input16 = document.getElementById('box8');
-  let input17 = document.getElementById('box8');
-  let input18 = document.getElementById('box8');
-  
+  let input9 = document.getElementById('box9');
+	  let input10 = document.getElementById('box10');
+	  let input11 = document.getElementById('box11');
+	  let input12 = document.getElementById('box12');
+	  let input13 = document.getElementById('box13');
+	  let input14 = document.getElementById('box14');
+	  let input15 = document.getElementById('box15');
+	  let input16 = document.getElementById('box16');
+	  let input17 = document.getElementById('box17');
+	  let input18 = document.getElementById('box18');
 	
 	input1.value = "83";
 	input2.value = "20";
